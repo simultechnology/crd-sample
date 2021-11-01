@@ -45,4 +45,22 @@ kubectl get trm -A
 ```
 kubectl apply -f assets/gothenburg-thermometer.yaml
 
+kubectl apply -f assets/thermometer-crd-with-validation.yaml
+
+kubectl apply -f assets/gothenburg-thermometer.yaml
+kubectl apply -f assets/stockholm-thermometer.yaml 
+
+kubectl apply -f assets/gothenburg-thermometer-valid.yaml
+kubectl apply -f assets/stockholm-thermometer-valid.yaml 
+
+kubectl get trm -A
+```
+
+## Explain Command
+
+```
+kubectl explain namespace
+
+kubectl explain thermometer
+
 ```
